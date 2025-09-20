@@ -1,3 +1,4 @@
+book.title
 x = Book.objects.all()[0]
 >>> x.title
 '1984'
