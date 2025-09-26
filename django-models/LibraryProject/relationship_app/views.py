@@ -1,7 +1,7 @@
 from django.shortcuts import render, loader
 from django.http import HttpResponse
 from .models import Library
-from django.views.generic import ListView
+from django.views.generic.detail import DetailView
 
 # Create your views here.
 def list_books(request):
