@@ -2,6 +2,8 @@ from django.shortcuts import render, loader
 from django.http import HttpResponse
 from .models import Library
 from django.views.generic.detail import DetailView
+from django.contrib.auth import login
+from django.contrib.auth import UserCreationForm
 
 # Create your views here.
 def list_books(request):
@@ -21,3 +23,4 @@ class library_detailView(ListView):
         context['books'] = context['object_list']  # Optional, if you want a custom name
         context['name'] = 'All Available Books'
         return context
+
