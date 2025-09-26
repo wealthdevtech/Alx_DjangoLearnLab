@@ -22,4 +22,5 @@ class UserProfile(models.Model):
     pass
 
 class Meta", "permissions"
+can_add_book", "can_change_book", "can_delete_book"
     
