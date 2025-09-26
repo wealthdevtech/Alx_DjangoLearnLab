@@ -4,6 +4,7 @@ from .models import Library
 from django.views.generic.detail import DetailView
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.decorators import permission_required
 
 # Create your views here.
 def list_books(request):
@@ -23,4 +24,6 @@ class library_detailView(ListView):
         context['books'] = context['object_list']  # Optional, if you want a custom name
         context['name'] = 'All Available Books'
         return context
+
+ "relationship_app.can_add_book", "relationship_app.can_change_book", "relationship_app.can_delete_book"
 
