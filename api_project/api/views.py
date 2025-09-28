@@ -9,3 +9,4 @@ class BookList(generics.ListAPIView):
     serializer_class = BookSerializer
     
 BookViewSet
+viewsets.ModelViewSet
